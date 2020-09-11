@@ -14,7 +14,7 @@ Moreover, I have written some functions to:
 
 # Usage
 
-$> cd PDFJs_Viewer_Acroform
+$> cd PDFJS_Viewer_Acroform
 
 $> yarn install
 
