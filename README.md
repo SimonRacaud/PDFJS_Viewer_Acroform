@@ -24,4 +24,4 @@ Go to : http://localhost:1234/
 
 # Preview
 
-[preview](assets/preview.png)
+![preview](assets/preview.png)
