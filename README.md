@@ -6,8 +6,8 @@ More precisely, an usage of acroform functionality.
 There is currently a big lack of documentation on the subject.
 
 Moreover, I have written some functions to:
-* read the content of the form
-* write value in the form
-* save/download the form with the current form values
+* Read the content of the form
+* Write value in the form
+* Save/download the form with the current form values
 
 > version of pdfjs-dist : 2.6.347
