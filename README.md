@@ -11,3 +11,11 @@ Moreover, I have written some functions to:
 * Save/download the form with the current form values
 
 > version of pdfjs-dist : 2.6.347
+
+# Usage
+
+> cd PDFJs_Viewer_Acroform
+
+> yarn install
+Build the project
+> yarn run dev
