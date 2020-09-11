@@ -15,7 +15,7 @@ class PDFManager {
 
     /**
      * Show the PDF document in HTML
-     * @param {*} doc PDFDocumentProxy
+     * @param {PDFDocumentProxy} doc
      * @return PDFDocumentProxy
      */
     static async #loadDocument (doc) {
@@ -55,7 +55,7 @@ class PDFManager {
 
     /**
      * Read the annotations of the document and return them as an array of FormValue
-     * @param {*} doc PDFDocumentProxy
+     * @param {PDFDocumentProxy} doc 
      * @return array
      */
     static async readFormData (doc) {
@@ -96,9 +96,22 @@ class PDFManager {
     }
 
     /**
+     * Change the value of a specific field
+     * @param {PDFDocumentProxy} doc 
+     * @param {String} id of the field
+     * @param {String|Boolean} value of the field
+     */
+    static writeFormField(doc, id, value)
+    {
+        this.writeFormData(doc, [
+            new FormValue(id, value)
+        ]);
+    }
+
+    /**
      * Set the value of form fields
-     * @param {*} doc PDFDocumentProxy
-     * @param {*} formValues array of FromValue objects
+     * @param {PDFDocumentProxy} doc 
+     * @param {Array} formValues array of FromValue objects
      */
     static writeFormData(doc, formValues = []) {
         for (let i = 1; i <= doc.numPages; i++) {
@@ -132,8 +145,8 @@ class PDFManager {
 
     /**
      * Download the PDF with the annotation's content
-     * @param {*} doc PDFDocumentProxy
-     * @param {*} fileName String
+     * @param {PDFDocumentProxy} doc 
+     * @param {String} fileName
      */
     static async downloadPDF (doc, fileName = "newFile.pdf") {
         const data = await this.readFormData(doc);
@@ -149,9 +162,9 @@ class PDFManager {
 
     /**
      * Download an Uint8Array as a file  
-     * @param {*} data Uint8Array 
-     * @param {*} fileName String
-     * @param {*} fileType String
+     * @param {Uint8Array} data  
+     * @param {String} fileName 
+     * @param {String} fileType
      */
     static #downloadAsFile (data, fileName, fileType = "application/pdf") {
         const blob = new Blob([data], { type: fileType });
