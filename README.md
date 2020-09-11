@@ -21,3 +21,7 @@ $> yarn install
 $> yarn run dev
 
 Go to : http://localhost:1234/
+
+# Preview
+
+[preview](assets/preview.png)
