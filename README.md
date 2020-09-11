@@ -14,8 +14,10 @@ Moreover, I have written some functions to:
 
 # Usage
 
-> cd PDFJs_Viewer_Acroform
+$> cd PDFJs_Viewer_Acroform
 
-> yarn install
-Build the project
-> yarn run dev
+$> yarn install
+
+$> yarn run dev
+
+Go to : http://localhost:1234/
