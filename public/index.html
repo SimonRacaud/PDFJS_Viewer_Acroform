@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/pdfjs-dist/web/pdf_viewer.css">
+    <script src="../src/app.js"></script>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        #pageContainer {
+          padding-left: 60px;
+        }
+        .page {
+          position: relative;
+        }
+        button {
+          position: fixed;
+          z-index: 2;
+          background-color: firebrick;
+          color: white;
+          border-color: red;
+          padding: 1em 1em;
+          font-weight: bold;
+          width: 80px
+        }
+        #read {
+          top: 2em;
+        }
+        #write {
+          top: 6em;
+        }
+        #save {
+          top: 10em;
+        }
+      </style>
+  </head>
+  <body>
+    <button id="read">READ</button>
+    <button id="write">WRITE</button>
+    <button id="save">SAVE</button>
+    <div id="pageContainer"></div>
+  </body>
+</html>
