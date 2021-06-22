@@ -1,13 +1,13 @@
 # PDF Viewer and Acroform editor
 
-This is an example of usage of the pdf.js library.
+This is an example of the usage of the pdf.js library. 
 More precisely, an usage of acroform functionality.
 
 There is currently a big lack of documentation on the subject.
 
 Moreover, I have written some functions to:
 * Read the content of the form
-* Write value in the form
+* Write the value in the form
 * Save/download the form with the current form values
 
 > version of pdfjs-dist : 2.6.347
